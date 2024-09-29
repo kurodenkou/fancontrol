@@ -103,7 +103,7 @@ while True:
 	cpu2_temp = "CPU 2 Temp: "+str(float(data["cpu2_temp"])/10)+" C "
 	print(fan_speed+inlet_temp+outlet_temp+cpu1_temp+cpu2_temp)
 	# Write to DB
-	conn = sqlite3.connect('sff_idrac_data.db')
+	conn = sqlite3.connect('idrac_data.db')
 	record_data(conn, data)
 	conn.close()
 	# get a new speed from the.. math.
