@@ -6,3 +6,5 @@ Install:
 3) (optionally) run the web script if you want a simple website to monitor your fan rpm and cpu temps.
 
 This wasnt meant to be something amazing. The purpose of this project was simply to quiet my office a little bit.  
+
+Note, if youre having issues with the snmp stuff do a `pip3 install pysnmplib`.  For some reason pysnmp isnt right.
